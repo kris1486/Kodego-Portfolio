@@ -4,43 +4,54 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PORTFOLIO BOOTSRAP</title>
+    <title>WD48P_ASUNCION(Portfolio)</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https:cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">    <link rel="stylesheet" href="fontawesome.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Monoton">
-    <link rel="stylesheet" href="css/pb.css">
-    <link rel="stylesheet" href="css/fontawesome.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous"></head>
-
-
-    <body>
-
+</head>
+<body>
     <!-- navbar start -->
     <section id="navbar" >
         <nav class="navbar navbar-expand-lg shadow-sm fixed-top">
             <div class="container-fluid">
-                <a class="navbar-brand text-center fs-4 mx-3 px-4" href="#">a.kRIS.a</a>
+                <a class="navbar-brand text-center fs-4 mx-3 px-4" id="nav-name" href="#">a.kRIS.a</a>
+                <a class="navbar-brand text-center fs-4 mx-3 px-4" id="nav-name2" href="#">a.</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <i class="fas fa-bars"></i>
                 </button>
                 <div class="collapse navbar-collapse justify-content-end " id="navbarNav">
                     <ul class="navbar-nav">
-                        <li class="nav-item text-center mx-3">
-                            <a class="nav-link fs-6 fw-bold" aria-current="page" href="#home">Home</a>
+                        <li class="nav-item text-center ">
+                            <a class="nav-link" aria-current="page" href="#home">Home</a>
                         </li>
-                        <li class="nav-item text-center mx-3">
-                            <a class="nav-link fs-6 fw-bold" href="#about">About</a>
+                        <li class="nav-item text-center ">
+                            <a class="nav-link " href="#about">About</a>
                         </li>
-                        <li class="nav-item text-center mx-3">
-                            <a class="nav-link fs-6 fw-bold" href="#w-experience">Work Experience</a>
+                        <li class="nav-item text-center ">
+                            <a class="nav-link " href="#w-experience">Experience</a>
                         </li>
-                        <li class="nav-item text-center mx-3">
-                            <a class="nav-link fs-6 fw-bold" href="#portfolio">Portfolio</a>
+                        <li class="nav-item text-center ">
+                            <a class="nav-link " href="#portfolio">Portfolio</a>
                         </li>
-                        <li class="nav-item text-center mx-3">
-                            <a class="nav-link fs-6 fw-bold" href="#contact">Contact</a>
+                        <li class="nav-item text-center ">
+                            <a class="nav-link " href="#contact">Contact</a>
                         </li>
-                        <!-- <li class="nav-item text-center">
-                            <a class="nav-link fs-6 fw-bold" href="#references">References</a>
-                        </li> -->
+                        <li class="nav-item text-center" id="social-links">
+                            <a href="https://www.facebook.com/profile.php?id=100084884649792" class="btn icon text-light text-center ">
+                                <i class="fab fa-facebook-f" id="facebook"></i>
+                            </a>
+                            <a href="https://www.instagram.com/aku1486/" class="btn icon text-light text-center">
+                                <i class="fab fa-instagram" id="instagram"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/aprille-kris-asuncion-596566122/" class="btn icon text-light text-center ">
+                                <i class="fab fa-linkedin" id="linkedin"></i>
+                            </a>
+                            <a href="https://github.com/kris1486" class="btn icon text-light text-center">
+                                <i class="fab fa-github" id="github"></i>
+                            </a>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -59,55 +70,99 @@
                 </div>
                 <div class="col-md-6 mt-5 mt-md-0 order-md-first">
                     <div class="home-text">
-                        <p class="text-muted mb-1 fs-1">Hello I'm</p>
+                        <p class="text-muted mb-1 fs-1" id="hello">Hello I'm</p>
                         <h1 class="text-uppercase fs-1 fw-bold" >Web Dev Trainee</h1>
                         <h2 class="display-3" >Aprille Kris Asuncion</h2>
-                        <p class="mt-4 text-muted">Looking forward for new things to discover, challenges to overcome and opportunities to pursue and achieve.</p>
+                        <p class="text mt-4 text-muted ">Looking forward for new things to discover, challenges to overcome and opportunities to pursue and achieve.</p>
                     </div>
+                    <div class="row">
+                        <div class="btn col-lg-3 py-4 " >
+                            <a href="imagesSP/CV A.KRIS.A.pdf" class="btn px3" id="btnCV">Download CV</a>
+                        </div>
+                    </div>       
                 </div>
             </div>
         </div>
     </section>
     <!-- home section end -->
-
+    
     <!-- about section start -->
-    <section class="about bg-white py-5" id="about">
-        <div class="container-about m-5 p-5">
-            <div class="container-lg">
-                <div class="row justify-content-center py-5">
+    <section class="py-2" id="about">
+        <div class="container-about m-sm-5 p-3">
+            <div class="container-lg py-sm-3">
+                <div class="row justify-content-center">
                     <div class="col-lg-8 ">
                         <div class="section-title text-center">
-                            <h2 class="fw-bold py-3">About Me</h2>
+                            <h2 class="fw-bold mb-sm-3 py-5">About Me</h2>
                         </div>
                     </div>
                 </div>
-                <div class="row mb-5">
-                    <div class="col-md-6 px-5">
-                        <div class="about-text mx-5 px-5">
-                            <h3 class="fs-4 mb-3">Personal Information</h3>
-                            <p class="text-muted mb-5">Name:  Aprille Kris F. Asuncion <br> Address: 141 Purok 2 Balantacan, Lubao, Pampanga <br> </p>
-                        </div>                          
-                        <div class="row mx-5 px-5">
-                            <div class="col-lg-12 d-flex align-items-center py-5">
-                                <a href="#" class="btn px-3 btn-danger me-5">Download CV</a>
-                                <div class="social-links">
-                                    <a href="#" class="text-dark me-2"><i class="fab fa-facebook-f"></i></a>
-                                    <a href="#" class="text-dark me-2"><i class="fab fa-twitter"></i></a>
-                                    <a href="#" class="text-dark me-2"><i class="fab fa-instagram"></i></a>
-                                    <a href="#" class="text-dark me-2"><i class="fab fa-linked-in"></i></a>
+                <div class="row" id="w-xp">
+                    <div class="col-md-6 col-lg-4 mb-4">
+                        <div class="service-item shadow-sm p-4 rounded bg-white">
+                            <div class="mb-sm-4 mx-sm-5 px-sm-2">
+                                <div class="icon my-3 text-danger display-6 text-center">
+                                    <i class="fa-solid fa-toolbox"></i>
+                                </div>
+                                <h3 class="display-6 mb-3 text-center" class="title">Skills</h3>
+                                <div class="mb-sm-4" id="html">
+                                    <h3 class="fs-5 text-muted"><img  src = "imagesSP/logo-html5-custom.png" alt=""/> Html</h3>                                
+                                </div>
+                                <div class="mb-sm-4" id="css">
+                                    <h3 class="fs-5 py-2 text-muted"> <img  src = "imagesSP/logo-css3-red.png" alt=""/> Css </h3>                                
+                                </div>
+                                <div class="mb-sm-4" id="bootstrap">
+                                    <h3 class="fs-5 py-2 text-muted"> <img  src = "imagesSP/bootstrap.png" alt=""/> Bootstrap</h3>                                
+                                </div>
+                                <div class="mb-sm-4" id="javascript">
+                                    <h3 class="fs-5 py-2 text-muted"> <img  src = "imagesSP/cdnlogo.com_javascript.png" alt=""/> JavaScript</h3>
+                                </div>
+                                <div class="mb-sm-4" id="autodesk">
+                                    <h3 class="fs-5 py-2 text-muted"> <img  src = "imagesSP/autodesk.png" alt=""/> Autodesk</h3>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 mt-5 mt-md-0">
-                        <div class="education-bg mb-4 mx-5 px-5">
-                            <h3 class="fs-4 mb-4 px-5">Educational Background</h3>
-                            <div class="mb-5 px-5">
-                                <h3 class="fs-6">Bachelor of Science in Accountancy</h3>
+                    <div class="col-md-6 col-lg-4 mb-4">
+                        <div class="service-item shadow-sm p-4 rounded bg-white">
+                            <div class="icon my-3 text-danger display-6 text-center">
+                                <i class="fa-solid fa-laptop-file"></i>
+                            </div>
+                            <h3 class="display-6 mb-3 text-center" class="title">Trainings</h3>
+                            <div class="mb-sm-4 px-sm-2">
+                                <h3 class="fs-5">Full Stack Development</h3>
+                                <p class="text-muted">KODEGO <br>Present</p>
+                            </div>
+                            <div class="mb-sm-4 px-sm-2">
+                                <h3 class="fs-5">Online Accounting Course</h3>
+                                <p class="text-muted ">HSE INTERNATIONAL CONSULTANCY<br>2022</p>
+                            </div>
+                            <div class="mb-sm-4 px-sm-2">
+                                <h3 class="fs-5">Bookkeeping with QuickBooks Online</h3>
+                                <p class="text-muted ">Surge Academy<br>2021</p>
+                            </div>
+                            <div class="mb-sm-4 px-sm-2">
+                                <h3 class="fs-5">COSH Training </h3>
+                                <p class="text-muted ">HSE INTERNATIONAL CONSULTANCY<br>2021</p>
+                            </div>
+                        </div>
+                    </div>          
+                    <div class="col-md-6 col-lg-4 mb-4">
+                        <div class="service-item shadow-sm p-4 rounded bg-white">
+                            <div class="icon my-3 text-danger display-6 text-center">
+                                <i class="fa-solid fa-graduation-cap"></i>
+                            </div>                           
+                            <h3  class="display-6 mb-3 text-center py-1" class="title" >Education</h3>                            
+                            <div class="text-educ mb-sm-4 px-sm-2 py-1">
+                                <h3 class="fs-5 ">License Civil Engineer</h3>
+                                <p class="text-muted">Professional Licensure Exam <br>2008</p>
+                            </div>
+                            <div class="mb-sm-4 px-sm-2 py-1">
+                                <h3 class="fs-5">Bachelor of Science in Accountancy</h3>
                                 <p class="text-muted">Don honorio Ventura State University <br>Present</p>
                             </div>
-                            <div class="mb-5 px-5">
-                                <h3 class="fs-6">Bachelor of Science in Civil Engineering</h3>
+                            <div class="mb-sm-4 px-sm-2 py-1">
+                                <h3 class="fs-5">Bachelor of Science in Civil Engineering</h3>
                                 <p class="text-muted ">Don honorio Ventura State University <br>2008</p>
                             </div>
                         </div>
@@ -120,46 +175,44 @@
 
     <!-- work experience section start -->
     <section class="py-5" id="w-experience">
-        <div class="container-about m-5 p-5">
-            <div class="container-lg py-5">
+        <div class="container-about m-sm-5 p-5">
+            <div class="container-lg py-sm-5">
                 <div class="row justify-content-center">
                     <div class="col-lg-8 ">
                         <div class="section-title text-center">
-                            <h2 class="fw-bold mb-3 py-3">Work Experience</h2>
+                            <h2 class="fw-bold mb-sm-3 py-3">Work Experience</h2>
                         </div>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row" id="w-xp">
                     <div class="col-md-6 col-lg-4 mb-4">
-                        <div class="service-item shadow-sm p-4 rounded bg-white">
+                        <div class="xp-item shadow-sm p-4 rounded bg-white">
                             <div class="icon my-3 text-danger fs-2">
                                 <i class="fas fa-bridge"></i>
                             </div>
-                            <h3 class="fs-5 py-2">Civil 
-                                Engineer
-                            </h3>
+                            <h3 class="fs-5 py-2">Civil Engineer</h3>
                             <p class="text-muted">ARELI CONSTRUCTION AND ENGINEERING <br>2010 - 2017</p>
-                            <p class="text-muted">Projects handled: Bridges</p>
+                            <p class="text-muted">Projects handled: <br> San Isidro Bridge - Pampanga <br> San Antonio Bridge - Pampanga</p>
                         </div>
-                    </div>            
+                    </div>
                     <div class="col-md-6 col-lg-4 mb-4">
-                        <div class="service-item shadow-sm p-4 rounded bg-white">
+                        <div class="xp-item shadow-sm p-4 rounded bg-white">
                             <div class="icon my-3 text-danger fs-2">
                                 <i class="fas fa-road"></i>
                             </div>
                             <h3 class="fs-5 py-2 ">Office Engineer & Project Coordinator</h3>
                             <p class="text-muted">PACIFIC CONCRETE PRODUCTS INC. <br>2017 - 2019</p>
-                            <p class="text-muted">Projects handled: Runways</p>
+                            <p class="text-muted">Projects handled: <br> BASA Airport <br> Cagayan Airport </p>
                         </div>
                     </div>          
                     <div class="col-md-6 col-lg-4 mb-4">
-                        <div class="service-item shadow-sm p-4 rounded bg-white">
+                        <div class="xp-item shadow-sm p-4 rounded bg-white">
                             <div class="icon my-3 text-danger fs-2">
                                 <i class="fas fa-helmet-safety"></i>
                             </div>
                             <h3 class="fs-5 py-2 ">Freelance: Project Consultant</h3>
                             <p class="text-muted">R.G. ROQUE CONSTRUCTION AND TRADING <br>2029-2020</p>
-                            <p class="text-muted">Projects handled: Bridges</p>
+                            <p class="text-muted">Projects handled: San Lorenzo Bridge <br> &nbsp <br> &nbsp</p>
                         </div>
                     </div>
                 </div>
@@ -167,11 +220,11 @@
         </div>
     </section>
     <!-- work experience section end -->
-
+    
     <!-- portfolio section end -->
-    <section class="portfolio bg-white py-5" id="portfolio">
-        <div class="container-about m-5 p-5">
-            <div class="container-lg py-4">
+    <section class="portfolio py-5 bg-white" id="portfolio">
+        <div class="container-about m-3 m-sm-5 p-sm- 5">
+            <div class="container-lg py-5">
             <div class="row justify-content-center">
                 <div class="col-lg-8">
                     <div class="section-title text-center">
@@ -181,7 +234,7 @@
             </div>
             <!-- activity 1 start -->
             <div class="row">
-                <div class="col-md-6 col-lg-4">
+                <div class="col-md-6 col-lg-4 py-3">
                     <div class="card">
                         <div id="portfolio_1" class="carousel slide card-img-top" data-bs-ride="carousel">
                             <div class="carousel-inner">
@@ -205,15 +258,15 @@
                             </button>
                         </div>
                         <div class="card-body">
-                            <h5 class="card-title">Css: Self-Intoduction</h5>                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go to page</a>
+                            <h5 class="card-title">Css: Self-Intoduction</h5><p class="card-text"></p>
+                            <a href="https://kris1486.github.io/introduction-Kodego/" class="btn btn-primary">Go to page <i class="fas fa-link"></i></a>
                         </div>
                     </div>
                 </div>
                 <!-- activitty 1 end -->
-
+    
                 <!-- activity 2 start -->
-                <div class="col-md-6 col-lg-4">
+                <div class="col-md-6 col-lg-4 py-3">
                     <div class="card">
                         <div id="portfolio_2" class="carousel slide card-img-top" data-bs-ride="carousel">
                             <div class="carousel-inner">
@@ -237,15 +290,15 @@
                             </button>
                         </div>
                         <div class="card-body">
-                            <h5 class="card-title">Css: Online Library</h5>                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go to page</a>
+                            <h5 class="card-title">Css: Online Library</h5>  
+                            <a href="https://kris1486.github.io/introduction-Kodego/" class="btn btn-primary">Go to page <i class="fas fa-link"></i></a>
                         </div>
                     </div>
                 </div>
                 <!-- activity 2 end -->
 
                 <!-- activity 3 start -->
-                <div class="col-md-6 col-lg-4">
+                <div class="col-md-6 col-lg-4 py-3">
                     <div class="card">
                         <div id="portfolio_3" class="carousel slide card-img-top" data-bs-ride="carousel">
                             <div class="carousel-inner">
@@ -269,145 +322,122 @@
                             </button>
                         </div>
                         <div class="card-body">
-                            <h5 class="card-title">Bootsrap: Online Library</h5>                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go to page</a>
+                            <h5 class="card-title">Bootsrap: Online Library</h5>
+                            <a href="https://kris1486.github.io/introduction-Kodego/" class="btn btn-primary">Go to page <i class="fas fa-link"></i></a>
                         </div>
                     </div>
                 </div>
                 <!-- activity 3 end -->
             </div>
         </div>
-    </div>
     </section>
-    <!-- portfolio section end -->
-
-
-    <!-- contact me section start -->
-    <section class="contact mx-5 py-5" id="contact">
-        <div class="container-lg py-5">
-            <div class="row justify-content-center">
-                <div class="col-lg-8">
-                <div class="section-ttile text-center">
-                    <h2 class="fw-bold mb-5">Contact Me</h2>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-5">
-                <div class="contact-item d-flex mb-3">
-                    <div class="icon fs-4 text-danger">
-                        <i class="fas fa-envelope"></i>
-                    </div>
-                    <div class="text ms-3">
-                        <h3 class="fs-5">Email</h3>
-                        <p class="txt-muted">aprillekrisasuncion@gmail.com</p>
-                    </div>
-                </div>
-                <div class="contact-item d-flex mb-3">
-                    <div class="icon fs-4 text-danger">
-                        <i class="fas fa-phone"></i>
-                    </div>
-                    <div class="text ms-3">
-                        <h3 class="fs-5">Phone</h3>
-                        <p class="txt-muted">+63976 000 0825</p>
-                    </div>
-                </div>
-                <div class="contact-item d-flex mb-3">
-                    <div class="icon fs-4 text-danger">
-                        <i class="fas fa-map-marker-alt"></i>
-                    </div>
-                    <div class="text ms-3">
-                        <h3 class="fs-5">Mail Address</h3>
-                        <p class="txt-muted">141 Purok 2 Balantacan, Lubao, Pampanga</p>
+        <!-- portfolio section end -->
+    
+    
+        <!-- contact me section start -->
+        <section class="contact mx-5 py-5" id="contact">
+            <div class="container-lg py-5">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 py-3">
+                    <div class="section-ttile text-center">
+                        <h2 class="fw-bold mb-5">Contact Me</h2>
                     </div>
                 </div>
             </div>
-            <div class="col-md-7">
-                <div class="contact-form">
-                    <form action="">
-                        <div class="row">
-                            <div class="col-lg-6 mb-4">
-                                <input type="text" placeholder="Your Name" class="form-control form-control-lg fs-6 border-0 shadow-sm">
+            <div class="row">
+                <div class="col-md-5 py-sm-5">
+                    <div class="contact-item d-flex mb-3">
+                        <div class="icon fs-4 text-danger">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="text ms-3">
+                            <h3 class="fs-5">Email</h3>
+                            <p class="txt-muted">aprillekrisasuncion@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item d-flex mb-3">
+                        <div class="icon fs-4 text-danger">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="text ms-3">
+                            <h3 class="fs-5">Phone</h3>
+                            <p class="txt-muted">+63976 000 0825</p>
+                        </div>
+                    </div>
+                    <div class="contact-item d-flex mb-3">
+                        <div class="icon fs-4 text-danger">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="text ms-3">
+                            <h3 class="fs-5">Mail Address</h3>
+                            <p class="txt-muted">141 Purok 2 Balantacan, Lubao, Pampanga</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-12 d-flex">
+                        <div class="social-links">
+                            <a href="https://www.facebook.com/profile.php?id=100084884649792" class="btn icon text-light text-center bg-danger"><i class="fab fa-facebook-f" id="facebook"></i></a>
+                            <a href="https://www.instagram.com/aku1486/" class="btn icon text-light text-center bg-danger"><i class="fab fa-instagram" id="instagram"></i></a>
+                            <a href="https://www.linkedin.com/in/aprille-kris-asuncion-596566122/" class="btn icon text-light text-center bg-danger"><i class="fab fa-linkedin" id="linkedin"></i></a>
+                            <a href="https://github.com/kris1486" class="btn icon text-light text-center bg-danger"><i class="fab fa-github" id="github"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-7 py-5">
+                    <form name="submit-to-google-sheet">
+                        <div class="contact-form">
+                            <div class="row">
+                                <div class="col-lg-6 mb-4">
+                                    <input type="text" name="Name" placeholder="Your Name" class="form-control form-control-lg fs-6 border-0 shadow-sm" required>
+                                </div>
+                                <div class="col-lg-6 mb-4">
+                                    <input type="email" name="Email" placeholder="Your Email" class="form-control form-control-lg fs-6 border-0 shadow-sm" required>
+                                </div>
                             </div>
-                            <div class="col-lg-6 mb-4">
-                                <input type="text" placeholder="Your Email" class="form-control form-control-lg fs-6 border-0 shadow-sm">
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12 mb-4 py-sm-2">
+                                <textarea rows="5" name="Message" placeholder="Your Message" class="form-control form-control-lg fs-6 border-0 shadow-sm"></textarea>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12 py-3">
+                                <button type="submit" class="btn btn-danger px3" id="send">Send Message</button>
                             </div>
                         </div>
                     </form>
                 </div>
+            </div>
+        </section>
+        <!-- contact me section end -->
+    
+        <!-- footer start-->
+        <div class="footer border-top py-4">
+            <div class="container">
                 <div class="row">
-                    <div class="col-lg-12 mb-4">
-                        <textarea rows="5" placeholder="Subject" class="form-control form-control-lg fs-6 border-0 shadow-sm"></textarea>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-12 mb-4">
-                        <textarea rows="5" placeholder="Your Message" class="form-control form-control-lg fs-6 border-0 shadow-sm"></textarea>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-12">
-                        <button type="submit" class="btn btn-danger px3">Send Message</button>
+                    <div class="col-12">
+                        <p class=" text-center text-muted">aku.webdevCareer.2023</p>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <!-- contact me section end -->
-
-    <!-- references start -->
-    <!-- <section class="about bg-white py-5" id="references">
-        <div class="container-about m-5 p-5">
-            <div class="container-lg">
-                <div class="row justify-content-center py-5">
-                    <div class="col-lg-8 ">
-                        <div class="section-title text-center">
-                            <h2 class="fw-bold py-3">References</h2>
-                        </div>
-                    </div>
-                </div>
-                <div class="row mb-5">
-                    <div class="col-md-6">
-                        <div class="about-text">
-                            <h3 class="fs-6 mb-3">https://stackoverflow.com/ & <br> https://www.codeply.com</h3>
-                            <p class="text-muted mb-5">Looking for work-around on codes.</p>
-                        </div>                          
-                        <div class="about-text">
-                            <h3 class="fs-6 mb-3">https://www.youtube.com/@EasyTutorialsVideo</h3>
-                            <p class="text-muted mb-5">Mostly to understand designing hover and backgound images and colors.
-                            <br> Step by step in making web page.
-                            <br>Different simple techniques in creating navbar.</p>
-                        </div>                          
-                    </div>
-                    <div class="col-md-6 mt-5 mt-md-0">
-                        <div class="education-bg mb-4">
-                            <div class="mb-5">
-                                <h3 class="fs-6">https://www.youtube.com/@WebDevSimplified</h3>
-                                <p class="text-muted">Bootstrap Grid</p>
-                            </div>
-                            <div>
-                                <h3 class="fs-6">https://getbootstrap.com/ & <br> https://www.w3schools.com/default.asp</h3>
-                                <p class="text-muted">To get the code structure.</p>
-                            </div>
-                        </div>
-                    </div>
             </div>
         </div>
-    </section> -->
+        <!-- footer end -->
+    
 
-    <!-- references end -->
-
-    <!-- footer start-->
-    <div class="footer border-top py-4">
-        <div class="container-lg">
-            <div class="row">
-                <div class="col-lg-12">
-                    <p class="m-0 text-center text-muted">aku.webdevCareer.2023</p>
-                </div>
-            </div>
-        </div>
-        </div>
-    </div>
-    <!-- footer end -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script></body>
+    
+    
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzI4hvhqIIHeaC2SSW5PxfEx5AVUAmyWVsExj4ND87B/dev'
+        const form = document.forms['submit-to-google-sheet']
+          
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => console.log('Success!', response))
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+    <script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
 </html>
